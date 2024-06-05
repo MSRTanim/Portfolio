@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins';
+    background: url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+section{
+    min-height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 550px;
+    height: 350px;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #d5cccc24;
+}
+.top span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.top i{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 30%;
+
+}
+.top i:hover{
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.top p{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: rgba(0,0,0,0.15);
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+
+}
+.top i:hover ~ p{
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px 0px 30px;
+}
+.middle img{
+    width: 170px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    outline: 3px dashed rgba(255,255,255,0.25);
+}
+.middle .right{
+    margin: 20px 0px 10px 50px;
+}
+ul li{
+    list-style-type: circle;
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+}
+.social-icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    transition: .4s;
+    cursor: pointer;
+
+}
+.social-icon i{
+    font-size: 20px;
+}
+.social-icon span:hover{
+    color: #3c79db;
+    background: #fff;
+    transform: translateY(-4px);
+    box-shadow: inset 0 0 0 15px #fff;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0 30px;
+}
+.btn{
+    background: #3c79db;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover{
+    box-shadow: inset 0 0 0 20px #83ace2;
+}
